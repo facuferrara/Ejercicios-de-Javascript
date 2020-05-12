@@ -1,13 +1,12 @@
-var element = document.createElement(tagName, [options]);
-function addElement () { 
-  // crea un nuevo div 
-  // y añade contenido 
-  var newDiv = document.createElement("div"); 
-  var newContent = document.createTextNode("Hola!¿Qué tal?"); 
-  newDiv.appendChild(newContent); //añade texto al div creado. 
+var element = document.getElementById("source");
+element.innerHTML = "Remplaze lo anterior era muy sexy";
 
-  // añade el elemento creado y su contenido al DOM 
-  var currentDiv = document.getElementById("div1"); 
-  document.body.insertBefore(newDiv, currentDiv); 
-}
+var element2 =document.getElementById("destination");
+element2.innerHTML = "La programacion es lo mejor!";
 
+document.getElementById ("imagen")
+ = "pic_mountain.jpghttps://as.com/meristation/imagenes/2020/04/17/noticias/1587150802_445233_1587150841_noticia_normal_recorte1.jpg";;
+
+
+var txt = document.getElementById("swaps");
+console.log(txt.innerHTML);
